@@ -3,7 +3,8 @@ $(document).ready( function() {
   //
   //var audio = document.getElementsByTagName('tagName')
 
-  //
+
+  // on click
   $(".note.c").click(function () {
       // reset so it plays from beginning
       $("#cAudio").get(0).currentTime=0;
@@ -34,4 +35,59 @@ $(document).ready( function() {
       $("#bAudio")[0].currentTime=0;
       $("#bAudio")[0].play();
     });
+
+
+  // on keyboard
+
+  $("*").keypress(function(event) {
+      if ( event.keyCode == 97) {
+        var sound = $("#aAudio")[0];
+        sound.load();
+        sound.play();
+      }
+    });
+  $("*").keypress(function(event) {
+      if ( event.keyCode == 98) {
+        var sound = $("#bAudio")[0];
+        sound.load();
+        sound.play();
+      }
+    });
+  $("*").keypress(function(event) {
+      if ( event.keyCode == 99) {
+        var sound = $("#cAudio")[0];
+        sound.load();
+        sound.play();
+      }
+    });
+  $("*").keypress(function(event) {
+      if ( event.keyCode == 100) {
+        var sound = $("#dAudio")[0];
+        sound.load();
+        sound.play();
+      }
+    });
+  $("*").keypress(function(event) {
+      if ( event.keyCode == 101) {
+        var sound = $("#eAudio")[0];
+        sound.load();
+        sound.play();
+      }
+    });
+  $("*").keypress(function(event) {
+      if ( event.keyCode == 102) {
+        var sound = $("#fAudio")[0];
+        sound.load();
+        sound.play();
+      }
+    });
+  $("*").keypress(function(event) {
+      if ( event.keyCode == 103) {
+        var sound = $("#gAudio")[0];
+        sound.load();
+        sound.play();
+      }
+    });
+
+
 });
